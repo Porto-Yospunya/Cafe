@@ -1,0 +1,108 @@
+@import './colors-fonts.css';
+
+header {
+    width: 100%;
+    position: fixed;
+    background: none;
+    padding: 30px;  
+    /* box-shadow: 0 0 5px 0 var(--black-clr); */
+    z-index: 1000;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 40px;
+
+        h1 {
+            color: var(--white-clr);
+            font-size: 1.5rem;
+        }
+    
+        .content-container {
+            transition: 500ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                list-style: none;
+                margin: 0 30px;
+
+                a {
+                    text-decoration: none;
+                    color: var(--white-clr);
+                    font-size: 1rem;
+                }
+
+                #buynow {
+                    background-color: var(--wheat-clr);
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+                
+            }
+        }
+
+        .menu-bar {
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-bar .bar {
+            width: 100%;
+            border:2px solid var(--white-clr);
+            margin: 3px;
+        }
+    }
+}
+
+.content-container li:hover {
+    transition: 300ms;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        nav {
+            .content-container {
+                top: 70%;
+                left: 80%;
+                position: absolute;
+                display: block;
+                
+                li {
+                    text-align: center;
+                    margin: 20px;
+                    padding: 10px;
+                    border-bottom: 2px solid var(--white-clr);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    header {
+        nav {
+            .content-container {
+                top: 70%;
+                left: 65%;
+                position: absolute;
+                display: block;
+                
+                li {
+                    text-align: center;
+                    margin: 20px;
+                    padding: 10px;
+                    border-bottom: 2px solid var(--white-clr);
+                }
+            }
+        }
+    }
+}
+

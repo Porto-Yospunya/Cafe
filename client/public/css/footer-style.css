@@ -1,0 +1,51 @@
+@import './colors-fonts.css';
+
+footer {
+    background-color: var(--black-clr);
+    padding-top: 20px;
+
+    .contact-container {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+
+        a {
+            padding: 0 20px;
+            text-decoration: none;
+            color: var(--white-clr);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            h4 {
+                display: none;
+                margin: 0 10px;
+            }
+        }
+
+        a:hover h4 {
+            transition: 500ms;
+            transform: scale(1.05);
+            display: block;
+            border-bottom: 2px solid var(--white-clr); 
+        }
+
+        a:hover { 
+            transition: 500ms;
+            transform: scale(1.05);     
+        }
+    }
+
+    h1 {
+        color: var(--white-clr);
+    }
+
+    .copyright {
+        padding: 30px;
+
+        h4 {
+            text-align: center;
+            color: var(--white-clr);
+        }
+    }
+}

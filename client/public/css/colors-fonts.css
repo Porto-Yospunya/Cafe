@@ -1,0 +1,19 @@
+:root {
+    --wheat-clr: #956305;
+    --brown-clr: #4f3420;
+    --white-clr: #ffffff;
+    --black-clr: #292929;
+    --green-clr: #07a92f;
+    --gray-clr: #9f9f9f;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--black-clr), var(--brown-clr));
+}
