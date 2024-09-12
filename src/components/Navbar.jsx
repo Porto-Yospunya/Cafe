@@ -28,7 +28,7 @@ const Navbar = () => {
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#gallery">Gallery</a></li>
                 <li><a href="/#contact">Contact</a></li>
-                <li><a href="/menu">Menu</a></li>
+                <li><a href="/Menu">Menu</a></li>
                 <li><a href="" id="buynow">Buy now</a></li> 
               </ul>
               :
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <li><a href="/#about">About</a></li>  
                 <li><a href="/#gallery">Gallery</a></li>
                 <li><a href="/#contact">Contact</a></li>
-                <li><a href="/menu">Menu</a></li>
+                <li><a href="/Menu">Menu</a></li>
                 <li><a href="">Buy now</a></li> 
               </ul>
               <button className="menu-bar" onClick={handleMenu} >

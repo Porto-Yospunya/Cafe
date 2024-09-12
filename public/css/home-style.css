@@ -87,16 +87,18 @@
 
     .about-content {
         display: flex;
-        flex-direction: row-reverse;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
         img {
+            width: 50%;
             height: auto;
-            margin: 0 50px;
             width: 400px;
         }
 
         .content {
-            margin: 40px;
+            width: 50%;
+            margin: 40px 0;
 
             h2 {
                 font-size: 2rem;
@@ -135,3 +137,41 @@
     }
 }
 
+@media screen and (max-width: 720px) {
+    .about {
+        
+        .about-content {
+            display: flex;
+            justify-content: center;
+
+            img {
+                margin: 20px;
+            }
+    
+            .content {
+                width: 80%;
+                margin: 20px 0;
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }   
+        }
+    }
+
+    .gallery {
+        .gallery-container {
+            margin: 0;
+
+            .gallery-content {
+                img {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

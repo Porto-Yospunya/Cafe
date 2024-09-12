@@ -27,7 +27,6 @@ const HomePage = () => {
             </section>  
             <section className="about" id="about">
                 <div className="about-content">
-                    <img src='/assets/about.jfif' />
                     <div className="content">
                         <h2>About</h2>
                         <p>
@@ -45,6 +44,7 @@ const HomePage = () => {
                             laboriosam architecto repudiandae possimus quisquam distinctio commodi, reprehenderit ipsa.
                         </p>
                     </div>
+                    <img src='/assets/about.jfif' />
                 </div>
             </section>
             <section className="gallery" id="gallery">
