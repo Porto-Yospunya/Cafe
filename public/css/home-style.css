@@ -138,6 +138,37 @@
 }
 
 @media screen and (max-width: 720px) {
+    .popular {
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .popular-menu {
+            margin: 0;
+
+            .menu-container {
+                margin: 20px 0;
+                width: 80%;
+
+                img {
+                    width: 100%;
+                }
+
+                .content-container {
+                    p {
+                        font-size: 1rem;
+                    }
+
+                    button {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
     .about {
         
         .about-content {
@@ -145,6 +176,7 @@
             justify-content: center;
 
             img {
+                width: 80%;
                 margin: 20px;
             }
     
