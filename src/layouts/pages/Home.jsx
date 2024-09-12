@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { popularProducts, galleries } from './../../database.test';
+import { popularProducts, galleries } from '../../database.test';
 
 import '/public/css/home-style.css'
 

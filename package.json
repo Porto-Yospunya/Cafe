@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "cafe",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,7 +13,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-ionicons": "^4.2.1",
-    "react-responsive": "^10.0.0"
+    "react-responsive": "^10.0.0",
+    "react-router": "^6.26.2",
+    "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
