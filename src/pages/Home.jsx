@@ -27,7 +27,7 @@ const HomePage = () => {
             </section>  
             <section className="about" id="about">
                 <div className="about-content">
-                    <img src="/public/assets/about.jfif" alt="" />
+                    <img src='/assets/about.jfif' />
                     <div className="content">
                         <h2>About</h2>
                         <p>

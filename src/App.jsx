@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import HomePage from './pages/Home';
+import MenuPage from './pages/Menu';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import MenuPage from './pages/Menu';
 
 function App() {
   return (
