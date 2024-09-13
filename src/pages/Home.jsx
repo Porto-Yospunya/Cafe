@@ -11,7 +11,7 @@ const HomePage = () => {
             </div>
         </div>
         <article>
-            <section className="popular" id="popular">
+            <section className="popular">
                 <h2>Popular</h2>
                 <div className="popular-menu">
                     {popularProducts.map(product => (
@@ -25,7 +25,7 @@ const HomePage = () => {
                     ))}
                 </div>
             </section>  
-            <section className="about" id="about">
+            <section className="about">
                 <div className="about-content">
                     <div className="content">
                         <h2>About</h2>
@@ -47,7 +47,7 @@ const HomePage = () => {
                     <img src='/assets/about.jfif' />
                 </div>
             </section>
-            <section className="gallery" id="gallery">
+            <section className="gallery">
                 <div className="gallery-container">
                     {galleries.map(gallery => (
                         <div className="gallery-content">
