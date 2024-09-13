@@ -1,6 +1,6 @@
 import { popularProducts, galleries } from '../database.test';
 
-import '/public/css/home-style.css'
+import '/public/css/home-style.css';
 
 const HomePage = () => {
   return (

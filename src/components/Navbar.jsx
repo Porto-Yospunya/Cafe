@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
 import '/public/css/navbar-style.css'
@@ -24,22 +25,20 @@ const Navbar = () => {
             <h1>Logo</h1>
             {!isNavbar ? 
               <ul className="content-container">
-                <li><a href="/#home">Home</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="/#gallery">Gallery</a></li>
-                <li><a href="/#contact">Contact</a></li>
-                <li><a href="/Menu">Menu</a></li>
-                <li><a href="" id="buynow">Buy now</a></li> 
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/gallery">Gallery</Link></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><Link to="/menu">Menu</Link></li>
+                <li><Link id="buynow">Buy now</Link></li>
               </ul>
               :
               <>
               <ul className="content-container" style={active ? {display: "block"} : {left: "100vh"}}>
-                <li><a href="/#home">Home</a></li>
-                <li><a href="/#about">About</a></li>  
-                <li><a href="/#gallery">Gallery</a></li>
-                <li><a href="/#contact">Contact</a></li>
-                <li><a href="/Menu">Menu</a></li>
-                <li><a href="">Buy now</a></li> 
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/gallery">Gallery</Link></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><Link to="/menu">Menu</Link></li>
+                <li><Link>Buy now</Link></li>
               </ul>
               <button className="menu-bar" onClick={handleMenu} >
                 <span className="bar"></span>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const MenuPage = () => {
   return (
@@ -19,7 +19,7 @@ const MenuPage = () => {
             </section>
         </article>
     </>
-  )
+  );
 }
 
-export default MenuPage
+export default MenuPage;

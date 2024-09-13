@@ -1,23 +1,25 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter as Router } from 'react-router-dom';
 
+import Layout from './Layout';
 import HomePage from './pages/Home';
 import MenuPage from './pages/Menu';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import GalleryPage from './pages/Gallery';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <BrowserRouter>
+      <Router>
         <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/menu' element={<MenuPage />} />
+          <Route element={<Layout />} >
+            <Route path='/' element={<HomePage />} />
+            <Route path='/menu' element={<MenuPage />} />
+            <Route path='/gallery' element={<GalleryPage />} />
+          </Route>
         </Routes>
-      </BrowserRouter>
-      <Footer />
+      </Router>
     </>
   );
 }
 
 export default App;
+
