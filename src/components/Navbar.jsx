@@ -33,7 +33,7 @@ const Navbar = () => {
               </ul>
               :
               <>
-              <ul className="content-container" style={active ? {display: "block"} : {left: "100vh"}}>
+              <ul className="content-container" style={active ? {display: "block"} : {right: "-8rem"}}>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/gallery">Gallery</Link></li>
                 <li><a href="#contact">Contact</a></li>
