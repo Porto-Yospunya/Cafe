@@ -12,17 +12,13 @@ const Navbar = () => {
 
 
   const handleMenu = () => {
-    if (active) {
-      setActive(false);
-    } else {
-      setActive(true);
-    }
+    active ? setActive(false) : setActive(true);
   }
 
   return (
     <header>
         <nav>
-            <h1>Logo</h1>
+            <h1>.Logo</h1>
             {!isNavbar ? 
               <ul className="content-container">
                 <li><Link to="/">Home</Link></li>

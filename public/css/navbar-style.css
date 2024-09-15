@@ -1,4 +1,4 @@
-@import './colors-fonts.css';
+@import './root.css';
 
 header {
     width: 100%;
@@ -31,7 +31,8 @@ header {
                 a {
                     text-decoration: none;
                     color: var(--white-clr);
-                    font-size: 1rem;
+                    font-size: 1.2rem;
+                    font-weight: 500;
                 }
 
                 #buynow {

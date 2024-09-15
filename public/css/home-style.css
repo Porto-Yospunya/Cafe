@@ -1,7 +1,7 @@
-@import './colors-fonts.css';
+@import './root.css';
 
-.bg-img {
-    background-image: url('/public/assets/background.jpeg');
+.bg-img-home {
+    background-image: url('/assets/background1.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -35,50 +35,44 @@
         flex-wrap: wrap;
         margin: 40px;
 
-        .menu-container {
+        .popular-container {
             display: flex;
             flex-direction: column;
-            box-shadow: 0 2px 10px 0 var(--black-clr);
-            border-radius: 20px;
+            box-shadow: 0 0 20px 0 var(--brown-clr) inset;
             margin: 20px;
             background-color: var(--white-clr);
 
             img {
                 width: 400px;
-                border-radius: 20px 20px 0 0;
                 object-fit: cover;
             }
 
             .content-container {    
                 display: flex;
                 justify-content: space-between;
-                margin: 10px;
-            }
+                padding: 0 10px;
+                margin: 10px 0;
 
-            .name-menu {
-                background-color: var(--white-clr);
-                border-radius: 20px;
-                padding: 10px;
-                font-size: 1.5rem;
-                font-weight: 800;
-            }
+                .name-menu {
+                    padding: 10px;
+                    font-size: 1.6rem;
+                    font-weight: 800;
+                    color: var(--brown-clr);
+                }
 
-            .price-menu {
-                cursor: pointer;
-                border: none;
-                background-color: var(--wheat-clr);
-                color: var(--white-clr);
-                border-radius: 15px;
-                padding: 10px;
-                font-size: 1.6rem;
-            }
-
-            .price-menu:hover {
-                transition: 300ms;
-                transform: scale(1.05);
+                .price-menu {
+                    color: var(--wheat-clr);
+                    padding: 10px;
+                    font-size: 1.6rem;
+                }
             }
         }
     }
+}
+
+.popular-container:hover {
+    transition: 500ms;
+    transform: scale(1.05);
 }
 
 .about {
@@ -86,6 +80,7 @@
     box-shadow: 0 0 20px 0 var(--black-clr) inset;
 
     .about-content {
+        margin: 0 30px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -93,7 +88,6 @@
         img {
             width: 50%;
             height: auto;
-            width: 400px;
         }
 
         .content {
@@ -139,6 +133,7 @@
 
 @media screen and (max-width: 720px) {
     .popular {
+        margin: 30px 0;
 
         h2 {
             text-align: center;
@@ -148,20 +143,20 @@
         .popular-menu {
             margin: 0;
 
-            .menu-container {
-                margin: 20px 0;
-                width: 80%;
+            .popular-container {
+                margin: 20px;
+                width: 60%;
 
                 img {
                     width: 100%;
                 }
 
                 .content-container {
-                    p {
+                    .name-menu {
                         font-size: 1rem;
                     }
 
-                    button {
+                    .price-menu {
                         font-size: 1rem;
                     }
                 }

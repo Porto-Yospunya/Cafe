@@ -1,4 +1,4 @@
-@import './colors-fonts.css';
+@import './root.css';
 
 footer {
     background-color: var(--black-clr);

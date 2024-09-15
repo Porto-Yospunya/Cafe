@@ -1,11 +1,11 @@
-import { popularProducts, galleries } from '../database.test';
+import { popularProducts } from '../database.test';
 
 import '/public/css/home-style.css';
 
 const HomePage = () => {
   return (
     <>
-        <div className="bg-img" id="home">
+        <div className="bg-img-home">
             <div className="title">
                 <h1>Dev Coffee</h1>
             </div>
@@ -15,11 +15,11 @@ const HomePage = () => {
                 <h2>Popular</h2>
                 <div className="popular-menu">
                     {popularProducts.map(product => (
-                    <div className="menu-container">
+                    <div className="popular-container">
                         <img src={product.img} alt="" />
                         <div className="content-container">
                             <p className="name-menu">{product.name}</p>
-                            <button className="price-menu">${product.price}</button>
+                            <p className="price-menu">${product.price}</p>
                         </div>
                     </div>
                     ))}
@@ -47,7 +47,7 @@ const HomePage = () => {
                     <img src='/assets/about.jfif' />
                 </div>
             </section>
-            <section className="gallery">
+            {/* <section className="gallery">
                 <div className="gallery-container">
                     {galleries.map(gallery => (
                         <div className="gallery-content">
@@ -55,7 +55,7 @@ const HomePage = () => {
                         </div>
                     ))}
                 </div>
-            </section>
+            </section> */}
         </article>        
     </>
   );

@@ -1,0 +1,22 @@
+@import './root.css';
+
+.bg-img-gallery {
+    background-image: url('/assets/background3.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 1000px;
+
+    .title {
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        text-align: center;
+
+        h1 {
+            color: var(--white-clr);
+            font-size: 5rem;
+        }
+    }
+}
