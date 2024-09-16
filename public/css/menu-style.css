@@ -23,20 +23,20 @@
 
 article {
     display: grid;
+    grid-template-columns: 1fr;
 
     .menu {
-        margin: 40px 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        margin: 30px 100px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
         .menu-container {
-            position: relative;
             display: flex;
             flex-direction: column;
+            justify-self: center;
             box-shadow: 0 0 10px 0 var(--brown-clr) inset;
             background-color: var(--white-clr);
-            margin: 10px;
+            margin: 5px 10px;
             width: 200px;
             
             img {
@@ -100,9 +100,12 @@ article {
     color: var(--white-clr);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
     article {
         .menu {
+            margin: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
             .menu-container {
                 width: 150px;
 
@@ -110,20 +113,45 @@ article {
                     width: 150px;
                     height: 150px;
                 }
+
+                .menu-content {
+                    h4 {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
             }
         }
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px ) {
     article {
         .menu {
-            margin: 30px 0;
+            margin: 30px 20px;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 
             .menu-container {
-                margin: 5px;
+                width: 150px;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                .menu-content {
+                    h4 {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
             }
         }
     }
 }
-
