@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap");
+
 :root {
     --wheat-clr: #956305;
     --brown-clr: #4f3420;
@@ -5,6 +7,8 @@
     --black-clr: #292929;
     --green-clr: #07a92f;
     --gray-clr: #9f9f9f;
+
+    --font-capriola: "Capriola", sans-serif;
 }
 
 * {
@@ -12,6 +16,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: var(--font-capriola);
 }
 
 body {

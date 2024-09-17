@@ -23,17 +23,17 @@ const Navbar = () => {
               <ul className="content-container">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/gallery">Gallery</Link></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><Link to="/menu">Menu</Link></li>
-                <li><Link id="buynow">Buy now</Link></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="buynow"><Link id="buynow">Buy now</Link></li>
               </ul>
               :
               <>
               <ul className="content-container" style={active ? {display: "block"} : {right: "-8rem"}}>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/gallery">Gallery</Link></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><Link to="/menu">Menu</Link></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><Link>Buy now</Link></li>
               </ul>
               <button className="menu-bar" onClick={handleMenu} >
