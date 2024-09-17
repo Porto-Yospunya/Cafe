@@ -14,7 +14,7 @@ export const popularProducts = [
         name: "Cafe Latte",
         price: "0.99",
     },
-]
+];
 
 export const menus = [
     { 
@@ -107,4 +107,21 @@ export const menus = [
         name: "Coffee",
         price: "0.99",
     },
+];
+
+export const galleres = [
+    {
+        col1: [
+            { img: "/assets/gallery/g04.jpeg" },
+            { img: "/assets/gallery/g02.jpeg" },    
+            { img: "/assets/gallery/g06.jpeg" },
+            { img: "/assets/gallery/g08.jpeg" },
+        ],
+        col2: [
+            { img: "/assets/gallery/g01.jpeg" },
+            { img: "/assets/gallery/g03.jpeg" },
+            { img: "/assets/gallery/g05.jpeg" },
+            { img: "/assets/gallery/g07.jpeg" },
+        ],
+    }
 ]
