@@ -102,8 +102,8 @@ header {
                 li {
                     text-align: center;
                     margin: 20px;
-                    padding: 10px;
-                    border-bottom: 2px solid var(--white-clr);
+                    padding: 10px 0;
+                    /* border-bottom: 2px solid var(--white-clr); */
                 }
             }
         }
